@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "D:/GitHub Repository's/FSWD"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "D:"
+	}
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #faf1f8;
+    font-family: "Roboto", sans-serif;
+    color: #28282a;
+}
+.heading{
+    text-align: center;
+    padding: 25px;
+    font-size: 3rem;
+
+}
+.containerLeft,.containerRight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.leftImg{
+    max-width: 500px;
+    margin: 45px;
+    margin-right: 0px;
+}
+.leftImg img,.rightImg img{
+    width: 100%;
+    border-radius: 7px;
+}
+.contentRight{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    max-width: 600px;
+    margin: 45px;
+    margin-left: 0px;
+}
+.contentRight h2,.contentLeft h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.contentRight p,.contentLeft p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.rightImg{
+    max-width: 500px;
+    margin: 45px;
+    margin-left: 0px;
+}
+.contentLeft{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    max-width: 600px;
+    margin: 45px;
+    margin-right: 0px;
+}
+.containerRight{
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1250px){
+    .leftImg,.rightImg{
+        max-width: 350px;
+        margin: 45px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .leftImg,.rightImg{
+        max-width: 600px;
+        margin: 45px;
+        margin-bottom: 20px;
+    }
+    body{
+        align-items: center;
+    }
+    .containerLeft,.containerRight{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contentRight,.contentLeft{
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    .heading{
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+    .leftImg,.rightImg{
+        max-width: 550px;
+        margin: 20px;
+        margin-bottom: 5px;
+    }
+    .leftImg img,.rightImg img{
+        width: 100%;
+    }   
+    .contentRight,.contentLeft{
+        margin: 15px;
+    }
+}
